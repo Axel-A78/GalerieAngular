@@ -1,0 +1,57 @@
+<div class="flex flex-col min-h-screen justify-between overflow-hidden ">
+  <app-navbar></app-navbar>
+  <main class="mt-10 grow">
+    <div class="md:mx-auto">
+      <h1 class="text-black text-5xl text-center">Voici l'équipe du projet : </h1>
+
+      <div class="grid grid-col-2 grid-flow-col place-items-center mt-10">
+        <img class="" src=".\assets\avatar.png" alt="test" height="20%" width="20%">
+        <img class="" src=".\assets\avatar.png" alt="test" height="20%" width="20%">
+      </div>
+    </div>
+
+    <div class="text-2xl text-center">
+      <div class="flex flex-col space-y-2 place-items-center mt-20">
+        <label for="default" class="text-gray-700 select-none font-medium">Objet</label>
+        <input
+          id="obj"
+          type="text"
+          name="obj"
+          placeholder="Objet"
+          class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        />
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="...."
+          class="px-4 py-2 my-5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        >
+      </textarea>
+
+      <button
+      type="submit"
+      class="px-4 py-3 bg-mars-600 hover:bg-mars-400 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-x-75 transition-transform mx-5 flex my-5"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+
+      <span class="ml-2">Envoyez</span>
+    </button>
+
+
+      </div>
+
+
+
+    </div>
+
+
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>
